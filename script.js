@@ -17,7 +17,6 @@ async function ieladetChataZinas()
     //console.log(dati);
     zinas.innerHTML=dati;
 }
-<<<<<<< HEAD
-setInterval(ieladetChataZinas,1000)
-=======
->>>>>>> 787ca92929bc37e7d10bbaa360aeb489103f9d1f
+
+setInterval(ieladetChataZinas,1000);
+
