@@ -19,4 +19,22 @@ async function ieladetChataZinas()
     //console.log(dati);
     zinas.innerHTML=dati;
 }
-setInterval(ieladetChataZinas,1000);
+async function ieladetChataZinasJson()
+{
+    let datiNoServera=await fetch(API + '/lasit');
+    let dati =await datiNoServera.json();
+    //console.log(await dati[0]['zina'])
+    zinas.innerHTML='';
+
+    let i=0; 
+    while (i<await dati.length){
+        //console.log(i);
+        zinas.innerHTML=zinas.innerHTML+dati[i]['vards']+': '+dati[i]['zina']+'<br/>';
+        i=i+1;
+    }
+    zinas.scrollTop=zinas.scrollHeight;
+
+    //console.log(await dati)
+}
+setInterval(ieladetChataZinasJson,1000)
+//setInterval(ieladetChataZinas,1000);
