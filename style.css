@@ -1,3 +1,7 @@
 body{
     background: url(OIP.jpg);
 }
+.wrapper{
+    background: rgb(153,81,81);
+    width: 500px;
+}
