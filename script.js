@@ -16,3 +16,4 @@ async function ieladetChataZinas()
     //console.log(dati);
     zinas.innerHTML=dati;
 }
+setInterval(ieladetChataZinas,1000)

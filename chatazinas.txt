@@ -1,5 +1,6 @@
-Čau!
-Kāds te ir?
-Es te esmu!
-Kā tevi sauc?
-Pēteris!!!
+Čau! <br/>
+Kāds te ir? <br/>
+Es te esmu!<br/>
+Kā tevi sauc?<br/>
+Pēteris!!!<br/>
+Pēcis!!!<br/>
