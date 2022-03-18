@@ -2,11 +2,13 @@
 const API="https://chat2022.marinadrabovica.repl.co"
 let zina=document.querySelector('.manaZina');
 let zinas=document.querySelector('.chataZinas');
+let vards=document.querySelector('.vards');
 
 function sutitZinu()
 {
     console.log('sutitZinu() darbojas');
     zinas.innerHTML=zinas.innerHTML + '<br/>'+zina.value;
+    fetch(API +'/sutit/'+vards.value+'/'+zina.value);
 
 }
 
@@ -17,4 +19,4 @@ async function ieladetChataZinas()
     //console.log(dati);
     zinas.innerHTML=dati;
 }
-setInterval(ieladetChataZinas,1000)
+setInterval(ieladetChataZinas,1000);
