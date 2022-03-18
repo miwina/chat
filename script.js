@@ -29,12 +29,11 @@ async function ieladetChataZinasJson()
     let i=0; 
     while (i<await dati.length){
         //console.log(i);
+        let laiks='[<i>'+'????     '+'</i>]';
         if ("laiks" in dati [i]){
-        let laiks='[<i>'+dati[i]['laiks']+'</i>]';
+        laiks='[<i>'+dati[i]['laiks']+'</i>]';
         }
-        else {
-            let laiks='[<i>'+'????     '+'</i>]';
-        }
+        
         zinas.innerHTML=zinas.innerHTML+ laiks +dati[i]['vards']+': '+dati[i]['zina']+'<br/>';
         i=i+1;
     }
